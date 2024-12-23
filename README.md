@@ -16,3 +16,5 @@ INNER JOIN invoice i ON c.id = i.customer_id
 GROUP BY c.customer_name
 HAVING SUM(i.total_price) < 0.25 * (SELECT AVG(total_price) FROM invoice)
 ORDER BY total DESC;
+
+Certificate Link : https://www.hackerrank.com/certificates/6032dbf025e6
